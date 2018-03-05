@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 #pragma warning disable 649
 
@@ -18,15 +19,23 @@ namespace UnityModule.ContextManagement {
         [SerializeField]
         private string name;
 
-        public string Name => this.name;
+        public string Name {
+            get {
+                return this.name;
+            }
+        }
 
         [SerializeField]
         private string sceneNamePrefix;
 
-        private string SceneNamePrefix => this.sceneNamePrefix;
+        private string SceneNamePrefix {
+            get {
+                return this.sceneNamePrefix;
+            }
+        }
 
         public string CreateSceneName<TEnum>(TEnum sceneName) where TEnum : struct {
-            return $"{this.SceneNamePrefix}{sceneName.ToString()}";
+            return string.Format("{0}{1}", this.SceneNamePrefix, sceneName.ToString());
         }
 
     }
