@@ -28,9 +28,18 @@ namespace UnityModule.ContextManagement {
         [SerializeField]
         private string sceneNamePrefix;
 
-        private string SceneNamePrefix {
+        public string SceneNamePrefix {
             get {
                 return this.sceneNamePrefix;
+            }
+        }
+
+        [SerializeField]
+        private string namespacePrefix;
+
+        public string NamespacePrefix {
+            get {
+                return this.namespacePrefix;
             }
         }
 
