@@ -34,6 +34,15 @@ namespace UnityModule.ContextManagement {
             }
         }
 
+        [SerializeField]
+        private string namespacePrefix;
+
+        public string NamespacePrefix {
+            get {
+                return this.namespacePrefix;
+            }
+        }
+
         public string CreateSceneName<TEnum>(TEnum sceneName) where TEnum : struct {
             return string.Format("{0}{1}", this.SceneNamePrefix, sceneName.ToString());
         }
