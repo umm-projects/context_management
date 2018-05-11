@@ -9,6 +9,10 @@ namespace UnityModule.ContextManagement
     {
         string Name { get; }
 
+        string SceneNamePrefix { get; }
+
+        string NamespacePrefix { get; }
+
         // 本来であれば extension method にしたいところだが、 il2cpp の AOT 制約により enum な extension method は NG なのでこちらに定義する
         string CreateSceneName<TEnum>(TEnum sceneName) where TEnum : struct;
     }
