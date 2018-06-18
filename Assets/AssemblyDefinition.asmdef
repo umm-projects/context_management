@@ -1,6 +1,8 @@
 {
   "name": "umm@context_management",
-  "references": [],
+  "references": [
+    "umm@setting_core"
+  ],
   "optionalUnityReferences": [],
   "includePlatforms": [],
   "excludePlatforms": [],
