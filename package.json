@@ -2,9 +2,9 @@
   "name": "@umm/context_management",
   "version": "1.5.0",
   "description": "Manage Application/Project contexts",
-  "homepage": "https://github.com/umm-projects/context_management",
+  "homepage": "https://github.com/umm/context_management",
   "bugs": {
-    "url": "https://github.com/umm-projects/context_management/issues"
+    "url": "https://github.com/umm/context_management/issues"
   },
   "scripts": {
     "umm:init": "umm-init",
@@ -18,14 +18,14 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:umm-projects/context_management"
+    "url": "git@github.com:umm/context_management"
   },
   "files": [
     "Assets",
     "scripts"
   ],
   "dependencies": {
-    "@umm/scripts": "umm-projects/scripts#^1.0.0"
+    "@umm/scripts": "umm/scripts#^1.0.0"
   },
   "devDependencies": {}
 }
