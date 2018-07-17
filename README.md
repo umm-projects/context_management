@@ -12,7 +12,7 @@
 ## Install
 
 ```shell
-npm install github:umm-projects/context_management
+npm install github:umm/context_management
 ```
 
 ## Usage
